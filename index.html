@@ -1,138 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvimento Agrícola no Paraná</title>
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agronomia Sustentável no Paraná</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Desenvolvimento Agrícola no Paraná</h1>
-    <p>O crescimento da agricultura e sua importância para a economia paranaense</p>
-  </header>
+<header>
+    <h1>🌱 Agronomia Sustentável no Paraná</h1>
+    <p>Tecnologia, inovação e sustentabilidade para o futuro do campo.</p>
+</header>
 
-  <nav>
-    <ul>
-      <li><a href="#historia">História</a></li>
-      <li><a href="#producao">Produção</a></li>
-      <li><a href="#tecnologia">Tecnologia</a></li>
-      <li><a href="#futuro">Futuro</a></li>
-    </ul>
-  </nav>
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#praticas">Práticas Sustentáveis</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#links">Links Úteis</a>
+</nav>
 
-  <section id="historia">
-    <h2>História da Agricultura no Paraná</h2>
-
+<section id="hero">
+    <h2>Produzir mais preservando o meio ambiente</h2>
     <p>
-      O Paraná se tornou um dos maiores produtores agrícolas do Brasil graças
-      ao solo fértil, ao clima favorável e ao investimento em tecnologia rural.
+        O Paraná é referência nacional em agricultura sustentável,
+        utilizando bioinsumos, agricultura de precisão e monitoramento ambiental.
+    </p>
+</section>
+
+<section id="sobre">
+    <h2>Sobre a Agronomia Sustentável</h2>
+    <p>
+        A agronomia sustentável busca aumentar a produtividade agrícola
+        preservando recursos naturais, reduzindo impactos ambientais e
+        promovendo desenvolvimento econômico e social.
     </p>
 
-    <img
-      class="imagem"
-      src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop"
-      alt="Plantação agrícola"
-    >
-  </section>
-
-  <section id="producao">
-    <h2>Principais Produções</h2>
-
-    <div class="card-container">
-      
-    <div class="card">
-
-  <h3>🌱 Notícias da Soja no Campo</h3>
-
-  <p>
-    Acompanhe as principais notícias, reportagens e informações sobre a
-    produção de soja, mercado agrícola, clima e tecnologia no campo.
-  </p>
-
-  <a href="https://www.canalrural.com.br" target="_blank">
-    📰 Canal Rural
-  </a>
-  <br><br>
-
-  <a href="https://www.agrolink.com.br" target="_blank">
-    🌾 Agrolink
-  </a>
-  <br><br>
-
-  <a href="https://www.noticiasagricolas.com.br" target="_blank">
-    🚜 Notícias Agrícolas
-  </a>
-  <br><br>
-
-  <a href="https://globorural.globo.com" target="_blank">
-    📺 Globo Rural
-  </a>
-
-</div>
-      
-      <div class="card">
-        <h3>🌽 Milho</h3>
-        <p>
-          O milho possui grande importância na alimentação animal e na indústria.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>☕ Café</h3>
-        <p>
-          O café marcou a história econômica do estado.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="tecnologia">
-    <h2>Tecnologia no Campo</h2>
-
     <p>
-      Máquinas modernas, drones e irrigação inteligente aumentaram a produtividade.
+        No Paraná, iniciativas como a Plataforma Paraná + Sustentável ajudam
+        produtores a monitorar indicadores ambientais e produtivos por meio
+        de inteligência territorial e imagens de satélite.
     </p>
+</section>
 
-    <div class="dados">
-      <h3>Dados Importantes</h3>
+<section id="praticas">
+    <h2>Principais Práticas Sustentáveis</h2>
 
-      <p>✔ O Paraná está entre os maiores produtores agrícolas do Brasil.</p>
-      <p>✔ O agronegócio gera milhares de empregos.</p>
-      <p>✔ A tecnologia aumentou a eficiência no campo.</p>
+    <div class="cards">
+        <div class="card">
+            <h3>🌿 Bioinsumos</h3>
+            <p>Redução da dependência de fertilizantes químicos.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚜 Agricultura de Precisão</h3>
+            <p>Uso de sensores, drones e mapas digitais.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Conservação da Água</h3>
+            <p>Manejo eficiente e irrigação inteligente.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 Agroflorestas</h3>
+            <p>Integração entre árvores e produção agrícola.</p>
+        </div>
     </div>
+</section>
 
-    <button onclick="mostrarMensagem()">
-      Clique para saber mais
+<section id="noticias">
+    <h2>Últimas Notícias</h2>
+
+    <div id="news-container"></div>
+
+    <button onclick="carregarNoticias()">
+        Atualizar Notícias
     </button>
+</section>
 
-    <p id="mensagem" class="oculto">
-      O desenvolvimento agrícola do Paraná é fundamental para a economia brasileira.
-    </p>
-  </section>
+<section id="links">
+    <h2>Links Oficiais</h2>
 
-  <section id="futuro">
-    <h2>O Futuro da Agricultura</h2>
+    <ul>
+        <li>
+            <a href="https://www.agricultura.pr.gov.br" target="_blank">
+                Secretaria da Agricultura do Paraná
+            </a>
+        </li>
 
-    <p>
-      O futuro da agricultura envolve sustentabilidade,
-      preservação ambiental e inteligência artificial.
-    </p>
+        <li>
+            <a href="https://www.idrparana.pr.gov.br" target="_blank">
+                IDR-Paraná
+            </a>
+        </li>
 
-    <img
-      class="imagem"
-      src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop"
-      alt="Agricultura sustentável"
-    >
-  </section>
+        <li>
+            <a href="https://www.parana.pr.gov.br" target="_blank">
+                Governo do Paraná
+            </a>
+        </li>
 
-  <footer>
-    <p>Site educativo sobre o desenvolvimento agrícola no Paraná © 2026</p>
-  </footer>
+        <li>
+            <a href="https://www.embrapa.br" target="_blank">
+                Embrapa
+            </a>
+        </li>
 
-  <script src="script.js"></script>
+        <li>
+            <a href="https://showrural.com.br" target="_blank">
+                Show Rural Coopavel
+            </a>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 - Agronomia Sustentável no Paraná</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
