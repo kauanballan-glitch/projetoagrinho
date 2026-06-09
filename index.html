@@ -1,125 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agronomia Sustentável no Paraná</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Paraná Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
 <header>
-    <h1>🌱 Agronomia Sustentável no Paraná</h1>
-    <p>Tecnologia, inovação e sustentabilidade para o futuro do campo.</p>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <h1>Agro Paraná Sustentável</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#reportagens">Reportagens</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#praticas">Práticas Sustentáveis</a>
-    <a href="#noticias">Notícias</a>
-    <a href="#links">Links Úteis</a>
-</nav>
-
-<section id="hero">
-    <h2>Produzir mais preservando o meio ambiente</h2>
-    <p>
-        O Paraná é referência nacional em agricultura sustentável,
-        utilizando bioinsumos, agricultura de precisão e monitoramento ambiental.
-    </p>
+<section class="hero">
+    <div class="overlay">
+        <h2>O Futuro do Campo é Sustentável</h2>
+        <p>
+            Acompanhe as principais notícias, reportagens e inovações
+            do agronegócio sustentável no Paraná.
+        </p>
+        <button id="btnNoticias">Ver Destaques</button>
+    </div>
 </section>
 
-<section id="sobre">
-    <h2>Sobre a Agronomia Sustentável</h2>
-    <p>
-        A agronomia sustentável busca aumentar a produtividade agrícola
-        preservando recursos naturais, reduzindo impactos ambientais e
-        promovendo desenvolvimento econômico e social.
-    </p>
+<section id="noticias" class="container">
+    <h2 class="section-title">Últimas Notícias</h2>
 
-    <p>
-        No Paraná, iniciativas como a Plataforma Paraná + Sustentável ajudam
-        produtores a monitorar indicadores ambientais e produtivos por meio
-        de inteligência territorial e imagens de satélite.
-    </p>
+    <div class="grid">
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
+            <div class="content">
+                <span class="tag">Energia Verde</span>
+                <h3>Biogás transforma propriedades rurais no Oeste do Paraná</h3>
+                <p>
+                    Novos projetos de biodigestores estão ampliando a geração
+                    de energia limpa e reduzindo custos de produção.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="">
+            <div class="content">
+                <span class="tag">Sustentabilidade</span>
+                <h3>Programa RenovaPR impulsiona energia renovável no campo</h3>
+                <p>
+                    Agricultores investem em energia solar e biometano para
+                    tornar suas propriedades mais eficientes.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="">
+            <div class="content">
+                <span class="tag">Cooperativismo</span>
+                <h3>Cooperativas lideram práticas ESG no agronegócio</h3>
+                <p>
+                    Iniciativas de governança e responsabilidade ambiental
+                    fortalecem a competitividade do setor.
+                </p>
+            </div>
+        </article>
+
+    </div>
 </section>
 
-<section id="praticas">
-    <h2>Principais Práticas Sustentáveis</h2>
+<section id="reportagens" class="reportagens">
+    <div class="container">
+        <h2 class="section-title">Reportagem Especial</h2>
 
-    <div class="cards">
-        <div class="card">
-            <h3>🌿 Bioinsumos</h3>
-            <p>Redução da dependência de fertilizantes químicos.</p>
-        </div>
+        <div class="reportagem-box">
+            <div>
+                <h3>Paraná se destaca na produção sustentável de alimentos</h3>
 
-        <div class="card">
-            <h3>🚜 Agricultura de Precisão</h3>
-            <p>Uso de sensores, drones e mapas digitais.</p>
-        </div>
+                <p>
+                    O estado tem investido em proteção de nascentes,
+                    reflorestamento, geração de energia renovável e
+                    tecnologias agrícolas inteligentes.
+                </p>
 
-        <div class="card">
-            <h3>💧 Conservação da Água</h3>
-            <p>Manejo eficiente e irrigação inteligente.</p>
-        </div>
+                <p>
+                    A expansão do biogás, do biometano e da energia solar
+                    está transformando propriedades rurais em modelos
+                    de eficiência ambiental e econômica.
+                </p>
 
-        <div class="card">
-            <h3>🌳 Agroflorestas</h3>
-            <p>Integração entre árvores e produção agrícola.</p>
+                <button class="lerMais">
+                    Ler reportagem completa
+                </button>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30" alt="">
         </div>
     </div>
 </section>
 
-<section id="noticias">
-    <h2>Últimas Notícias</h2>
+<section id="tecnologia" class="container">
+    <h2 class="section-title">Agro Tecnologia</h2>
 
-    <div id="news-container"></div>
+    <div class="tech-grid">
 
-    <button onclick="carregarNoticias()">
-        Atualizar Notícias
-    </button>
+        <div class="tech-card">
+            <i class="fas fa-solar-panel"></i>
+            <h3>Energia Solar</h3>
+            <p>Redução dos custos energéticos das propriedades rurais.</p>
+        </div>
+
+        <div class="tech-card">
+            <i class="fas fa-seedling"></i>
+            <h3>Agricultura Regenerativa</h3>
+            <p>Conservação do solo e aumento da produtividade.</p>
+        </div>
+
+        <div class="tech-card">
+            <i class="fas fa-microchip"></i>
+            <h3>Agro 4.0</h3>
+            <p>Sensores, IoT e inteligência artificial no campo.</p>
+        </div>
+
+        <div class="tech-card">
+            <i class="fas fa-recycle"></i>
+            <h3>Biogás</h3>
+            <p>Aproveitamento de resíduos para geração de energia.</p>
+        </div>
+
+    </div>
 </section>
 
-<section id="links">
-    <h2>Links Oficiais</h2>
+<section class="newsletter">
+    <div class="container">
+        <h2>Receba notícias do agro sustentável</h2>
+        <p>Cadastre-se para receber atualizações semanais.</p>
 
-    <ul>
-        <li>
-            <a href="https://www.agricultura.pr.gov.br" target="_blank">
-                Secretaria da Agricultura do Paraná
-            </a>
-        </li>
-
-        <li>
-            <a href="https://www.idrparana.pr.gov.br" target="_blank">
-                IDR-Paraná
-            </a>
-        </li>
-
-        <li>
-            <a href="https://www.parana.pr.gov.br" target="_blank">
-                Governo do Paraná
-            </a>
-        </li>
-
-        <li>
-            <a href="https://www.embrapa.br" target="_blank">
-                Embrapa
-            </a>
-        </li>
-
-        <li>
-            <a href="https://showrural.com.br" target="_blank">
-                Show Rural Coopavel
-            </a>
-        </li>
-    </ul>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </div>
 </section>
 
-<footer>
-    <p>© 2026 - Agronomia Sustentável no Paraná</p>
+<footer id="contato">
+    <div class="container">
+        <h3>Agro Paraná Sustentável</h3>
+        <p>Portal de notícias e reportagens sobre inovação e sustentabilidade rural.</p>
+
+        <div class="social">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+
+        <p class="copy">
+            © 2026 Agro Paraná Sustentável
+        </p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
