@@ -1,43 +1,34 @@
-const noticias = [
-{
-titulo: "Paraná + Sustentável",
-texto: "Nova plataforma reúne dados ambientais e produtivos para apoiar agricultores."
-},
-{
-titulo: "Show Rural Coopavel 2026",
-texto: "Evento destacou inovação, sustentabilidade e agricultura familiar."
-},
-{
-titulo: "Bioinsumos ganham destaque",
-texto: "Encontro de Agroecologia reforçou a importância dos bioinsumos para uma agricultura mais sustentável."
-},
-{
-titulo: "Safra Paranaense em Crescimento",
-texto: "Boletins agrícolas apontam crescimento da produção com foco em eficiência e sustentabilidade."
-}
-];
-
-function carregarNoticias(){
-
-const container = document.getElementById("news-container");
-
-container.innerHTML = "";
-
-noticias.forEach(noticia => {
-
-const div = document.createElement("div");
-
-div.classList.add("news");
-
-div.innerHTML = `
-<h3>${noticia.titulo}</h3>
-<p>${noticia.texto}</p>
-`;
-
-container.appendChild(div);
-
+document.getElementById("btnNoticias")
+.addEventListener("click", () => {
+    document.getElementById("noticias")
+    .scrollIntoView({
+        behavior: "smooth"
+    });
 });
 
-}
+document.querySelector(".lerMais")
+.addEventListener("click", () => {
+    alert(`
+REPORTAGEM ESPECIAL
 
-window.onload = carregarNoticias;
+O Paraná vem consolidando sua posição como referência
+em sustentabilidade agrícola por meio de investimentos
+em energia renovável, preservação ambiental, biogás,
+biometano e agricultura de precisão.
+
+O crescimento das cooperativas e dos programas de
+incentivo à inovação fortalece o desenvolvimento
+econômico aliado à conservação dos recursos naturais.
+`);
+});
+
+document.getElementById("newsletterForm")
+.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    alert(
+        "Cadastro realizado com sucesso! Você receberá as próximas notícias."
+    );
+
+    this.reset();
+});
